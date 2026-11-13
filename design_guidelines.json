@@ -1,0 +1,166 @@
+{
+  "theme": "light_with_dark_toggle",
+  "archetype": "ARCHETYPE 1: ORGANIC & EARTHY & DIGNIFIED BACK-OFFICE (Warm Sand, Deep Slate, Jade Green, Amber Gold)",
+  "emotional_tone": "Warm, trustworthy, serene, highly efficient, professional Indonesian Buddhist Foundation back-office with gold/amber/jade accents, crisp data density, and flawless CJK Chinese typography.",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8F6F0",
+        "on_bg": "#1C242B",
+        "on_bg_muted": "#5A6773",
+        "roles": {
+          "border": "#E4DFD3",
+          "link": "#9A3412",
+          "error": "#B91C1C",
+          "success": "#15803D",
+          "warning": "#B45309"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1C242B",
+        "on_bg_muted": "#5A6773",
+        "roles": {
+          "border": "#E8E3D7",
+          "row_hover": "#F5F2EB",
+          "selected": "#FEF3C7"
+        }
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#141D24",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "active_bg": "#C2410C",
+          "active_text": "#FFFFFF",
+          "hover_bg": "#1E293B",
+          "badge_bg": "#334155",
+          "gold_emblem": "#FBBF24"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "badge_belum_cek",
+        "kind": "solid",
+        "bg": "#FEF3C7",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#B45309"
+      },
+      {
+        "name": "badge_sudah_ok",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#166534",
+        "on_bg_muted": "#15803D"
+      },
+      {
+        "name": "badge_perlu_cek",
+        "kind": "solid",
+        "bg": "#FEE2E2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#B91C1C"
+      },
+      {
+        "name": "badge_split",
+        "kind": "solid",
+        "bg": "#EDE9FE",
+        "on_bg": "#5B21B6",
+        "on_bg_muted": "#6D28D9"
+      },
+      {
+        "name": "dark_page",
+        "kind": "solid",
+        "bg": "#0B0F14",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1E293B",
+          "link": "#FB923C",
+          "error": "#F87171",
+          "success": "#4ADE80",
+          "warning": "#FBBF24"
+        }
+      },
+      {
+        "name": "dark_panel",
+        "kind": "solid",
+        "bg": "#121820",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#243242",
+          "row_hover": "#1A232E"
+        }
+      }
+    ],
+    "accent": "#C2410C",
+    "on_accent": "#FFFFFF",
+    "secondary_accent": "#D97706",
+    "on_secondary_accent": "#FFFFFF"
+  },
+  "typography": {
+    "font_family_heading": "'Plus Jakarta Sans Variable', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif",
+    "font_family_body": "'Plus Jakarta Sans Variable', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif",
+    "font_family_mono": "'IBM Plex Mono', monospace",
+    "font_import": "@import \"@fontsource-variable/plus-jakarta-sans\";\n@import \"@fontsource/ibm-plex-mono\";",
+    "scale_px": {
+      "display": 48,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "body": 15,
+      "caption": 13
+    },
+    "cjk_rendering_note": "Ensures Hanzi (simplified & traditional like 廣吉, 施主, 功德主, 許文強) renders seamlessly inline alongside Indonesian donor names with balanced height and crisp weight."
+  },
+  "entry_surfaces": {
+    "/login": "split branded login — warm sand Buddhist foundation intro panel with lotus/wheel motif & positioning left, secure credential + role switcher form right",
+    "/": "finance command center — top KPI cards, BCA mutasi daily reconciliation alert bar, urgent verification table, program target progress bento"
+  },
+  "layouts": {
+    "app_shell": "Two-column responsive layout with dark slate left sidebar (collapsible on mobile into Sheet drawer), top sticky crystal glass bar with quick BCA import CTA, donor search shortcut (Cmd+K), notification center, and user avatar/role pill.",
+    "bento_grid": "Dense back-office grid (gap-4 md:gap-6). KPI summary cards top (4 cols), middle split 8 cols (Mutasi / Verification Queue) + 4 cols (Program target progress & reconciliation status), bottom audit feed and quick export shortcuts.",
+    "tables": "Dense financial table: sticky header, zebra row-hover, monospace IDR currency, bilingual donor badges (e.g., 'Budi Santoso (許文強)'), inline dropdowns for verification status & program tags, batch selection checkboxes with bulk action floating toolbar."
+  },
+  "visual_enhancers": {
+    "gold_trim": "Delicate warm amber/gold border highlight on active cards and total dana accumulators (`border-amber-500/30 shadow-amber-500/5`)",
+    "currency_formatting": "Always formatted in Indonesian standard Rupiah `Rp 1.250.000` with mono font for digit alignment in tables",
+    "split_indicator": "Visual progress bar showing remaining split amount vs total mutasi transfer in Split Modal (`Sisa Belum Dialokasikan: Rp 0`) with instant validation warning if sum != total",
+    "reconciliation_card": "Color-coded bank balance vs categorized balance status chip ('Klop / Seimbang' in green or 'Selisih Rp X' in red)."
+  },
+  "component_paths": {
+    "sidebar": "frontend/src/components/Sidebar.tsx",
+    "topbar": "frontend/src/components/Topbar.tsx",
+    "kpi_cards": "frontend/src/components/KpiSummary.tsx",
+    "mutasi_table": "frontend/src/components/MutasiTable.tsx",
+    "mutasi_upload_dialog": "frontend/src/components/MutasiUploadDialog.tsx",
+    "split_dialog": "frontend/src/components/SplitTransactionDialog.tsx",
+    "donor_modal": "frontend/src/components/DonorModal.tsx",
+    "receipt_dialog": "frontend/src/components/ReceiptDialog.tsx",
+    "program_progress_card": "frontend/src/components/ProgramProgressCard.tsx"
+  },
+  "instructions_to_main_agent": [
+    "Build the complete operational finance suite for 'Yayasan Dana Paramita Guang Ji Indonesia' (印尼廣吉慈善功德基金會).",
+    "Support full bilingual donor records: Nama Latin (e.g. 'Handoko Wijaya') and Nama Mandarin (e.g. '黃德興' or '王小明') with Pinyin search capability.",
+    "Implement BCA CSV / Excel statement uploader with preview parser, auto-deduplication by unique bank ref / timestamp, and configurable column mapping in Settings.",
+    "Provide rich seed data with realistic Indonesian Buddhist dana categories: Dana Operasional Vihara, Cetak Kitab Suci, Fang Sheng (Pelepasan Satwa), Paket Sembako Waisak, Pengobatan Lansia, Pembangunan Graha Samadhi, Dana Pelita / Lilin.",
+    "Status flags for verification workflow: 'Belum Cek' (amber), 'Sudah OK' (green), 'Perlu Cek' (red) with instant one-click toggle or inline select in table.",
+    "Split transaction feature: Allows single incoming bank credit (e.g. Rp 5.000.000) to be divided into multiple donor contributions / programs with live remaining amount indicator.",
+    "Export feature: Export verified mutasi or donor list to Excel (.xlsx) / CSV and printable official Kwitansi / Bukti Tanda Terima Dana.",
+    "Role switcher / Auth: Ketua/Bendahara (Full access), Staf Admin (Input & categorize), Rekan Pengecek (Quick PIN-based verification), Auditor (Read-only + audit log view).",
+    "Dark mode toggle using next-themes / class='dark' with smooth slate/obsidian palette.",
+    "Ensure every button, input, select, table row, and modal has explicit data-testid attributes for testing."
+  ]
+}
